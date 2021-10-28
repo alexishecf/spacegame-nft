@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-indigo-400 underline;
+}
+
+.text-shadow-lg-white {
+  text-shadow: 0 15px 15px rgba(255, 255, 255, 1), 0 0px 15px rgba(255, 255, 255, 1),
+    0 15px 25px rgba(255, 255, 255, 1), 0 15px 25px rgba(255, 255, 255, 1),
+    0 15px 45px rgba(255, 255, 255, 1);
+}
+
+iframe {
+  background: #ccc;
+  border: 1px solid #ccc;
+  height: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  filter: invert(1);
+}
+
+
+@keyframes animatedBackground {
+  from {
+    background-position:0 0;
+  }
+  to {
+    background-position:0 100%;
+  }
+}

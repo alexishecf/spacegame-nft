@@ -9,16 +9,14 @@ import Link from 'next/link'
 export default function Page() {
 
   const myStyle = {
-    "background-color": "#000000",
-    opacity: "0.8",
-    "background-image": "repeating-radial-gradient( circle at 30% 50%, transparent 0, #00000044 12px ), repeating-linear-gradient( #33333322, #333333aa )",
-  }
-
-  const myStyle2 = {
-    "background-size": "600% 600%",
-    animation: "animatedBackground 3s linear infinite alternate",
+    "background-image": "url('/images/hero.png')",
+    "background-size":"cover",
+    "background-repeat":"no-repeat",
+    "background-position":"center 50%",
 
   }
+
+  
 
   return (
     <Layout>
@@ -26,8 +24,8 @@ export default function Page() {
         <title>SpaceGame | Home</title>
       </Head>
 
-      <div className="relative overflow-hidden  bg-black bg-opacity-60" style={myStyle}>
-        <div style={myStyle2} className="absolute w-screen h-full bg-gradient-to-br from-blue-900 to-blue-400 opacity-40 z-0"></div>
+      <div className="relative overflow-hidden" style={myStyle}>
+        <div className="absolute left-0 top-0 w-full h-full bg-black opacity-30"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-8 xl:px-0 py-16" >
 
           {/*Hero*/}
@@ -41,7 +39,7 @@ export default function Page() {
               <h1 className="text-4xl font-black tracking-tight absolute left-14 -top-1"> SpaceGame</h1>
 
             </div>
-            <p className="mt-6 max-w-3xl text-justify bg-gray-300 bg-opacity-5 rounded-md px-4 py-4">
+            <p className="mt-6 max-w-3xl text-justify bg-gray-900 bg-opacity-80 text-gray-400 rounded-md px-4 py-4">
               This is a spacegame built with Unity that uses NFTs for items and collectibles, it also uses the <strong>GLM</strong> currency, a cryptocurrency especially made for the game that is used to buy and sell various things in-game.
               <br />
               All things happen on a testnet and you need a <a href="https://github.com/" target="_blank">Github account</a> to play this game.
